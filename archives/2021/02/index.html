@@ -102,9 +102,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </head>
 
   <body>
+    <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/sakura.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_slide.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/clicklove.js"></script>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -121,9 +124,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://i.loli.net/2021/02/20/wimcjKLbd6ZOSC7.jpg'/>
           
           
+            BlackBird
           
         </a>
       
@@ -1310,7 +1313,46 @@ var loadCSS = function( href, before, media, attributes ){
   });
   volantis.pjax.push(pjax_valine);
 </script>
+<script>
+  var pushLink ="https://push.xuthus.cc/send/fe48bbc7e5fcccefc018892313129f5b";
+  var siteName = "W4J1e's blog";
+  var valineButton=document.getElementsByClassName("vsubmit vbtn")[0];
+  var title = siteName + "上又有新评论啦~!\n";
 
+  function send_valine() {
+    //获取元素信息
+    var pagename = document.title;
+    var pageurl = document.URL;
+    var pushtime = new Date();
+    var vnick = document.getElementsByClassName("vnick vinput")[0].value;
+    var vmail = document.getElementsByClassName("vmail vinput")[0].value;
+    var vlink = document.getElementsByClassName("vlink vinput")[0].value;
+    var veditor = document.getElementsByClassName("veditor vinput")[0].value;
+    content =
+      title +
+      "昵称：" + vnick +
+      "\n邮箱：" + vmail +
+      "\n网站地址：" + vlink +
+      "\n文章标题：" + pagename +
+      "\n评论内容：" + veditor +
+      "\n文章链接：" + pageurl +
+      "\n评论时间" + pushtime.toLocaleString() + "\n";
+    var httpRequest = new XMLHttpRequest(); //第一步：创建需要的对象
+    httpRequest.open("POST", pushLink, true); //第二步：打开连接
+    httpRequest.setRequestHeader(
+      "Content-type",
+      "application/json"
+    ); //设置请求头 注：post方式必须设置请求头（在建立连接后设置请求头）
+    httpRequest.send(content); //发送请求 
+  }
+
+  document.body.addEventListener('click', function(e) {
+  if(e.target.className.indexOf('vsubmit') === -1) {
+    return;
+  }
+  send_valine();
+})
+</script>
 
 
 

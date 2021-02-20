@@ -2418,6 +2418,9 @@ article#comments #valine_container .vwrap .vedit span {
 article#comments #valine_container .vwrap .vedit span.actived {
   fill: #44d7b6;
 }
+article#comments #valine_container .vwrap .vedit .veditor {
+  background: url("https://cdn.jsdelivr.net/gh/zyoushuo/Blog/images/valinebg.webp") 100% 100% no-repeat;
+}
 article#comments #valine_container .vcount {
   color: var(--color-p);
   font-size: 0.875rem;
