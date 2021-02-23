@@ -5,6 +5,8 @@
   <!-- SEO相关 -->
   
     
+      <meta name="robots" content="noindex,follow">
+    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -22,13 +24,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>2020moectf Algorithm - BlackBird&#39;s Blog</title>
-  
-    <meta name="keywords" content="CTF,program,wp">
+  <title>标签：program - BlackBird&#39;s Blog</title>
   
 
-  
-    <meta name="description" content="2020年XDSEC招新赛moectf题解">
   
 
   <!-- feed -->
@@ -360,7 +358,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper post search' style="display: ;">
+        <div id="half" class='cover-wrapper  search' style="display: ;">
           
             <div id='cover-backstretch'></div>
           
@@ -401,317 +399,77 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
+
 <div class='l_main'>
-  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
-
-
+    
+      
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
   
-  <div class="article-meta" id="top">
+  
+  
+  
     
-    
-    
-      <h1 class="title">
+    <h2 class="article-title" >
+      <a href="/2020/10/13/2020moectf-Algorithm/">
         2020moectf Algorithm
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author'>
-  <a class='author' target="_blank" href="https://BlackBird-BB.github.io/" rel="nofollow noopener">
-    <img no-lazy src="https://i.loli.net/2021/02/20/wimcjKLbd6ZOSC7.jpg">
-    <p>BB</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class='new-meta-item category'>
-    <a class='notlink'>
-      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/CTF%E6%AF%94%E8%B5%9B%E9%A2%98%E8%A7%A3/">CTF比赛题解</a>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年10月13日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
-      
-      <div id="lc-pv" data-title="2020moectf Algorithm" data-path="/2020/10/13/2020moectf-Algorithm/">
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
+      </a>
+    </h2>
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/CTF/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>CTF</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/program/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>program</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/wp/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>wp</p></a></div>
-
-
-          
-        
-          
-        
-          
-            
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：915字</p>
-    </a>
-  </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：4分钟</p>
-    </a>
-  </div>
-
-
-          
-        
-      </div>
+  <div class='md'>
+    
+      <p>这次的算法题，，，怎么说，，感觉真正考察算法的我都没写，就写了些不考察真正算法的题目</p>
     
   </div>
-
-
   
-  
-  <p>这次的算法题，，，怎么说，，感觉真正考察算法的我都没写，就写了些不考察真正算法的题目</p>
-<a id="more"></a>
-
-<h2 id="mess"><a href="#mess" class="headerlink" title="mess"></a>mess</h2><img src="/images/2020moectf-Algorithm\image-20201009155437259.png" class="lazyload" data-srcset="/images/2020moectf-Algorithm\image-20201009155437259.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20201009155437259" style="zoom:67%;" />
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">flag = <span class="string">&#x27;moectf&#123;xxxxxxxxxxx&#125;&#x27;</span></span><br><span class="line">digit = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> flag:</span><br><span class="line">    digit += <span class="built_in">str</span>(<span class="built_in">ord</span>(i))</span><br><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="built_in">len</span>(digit):</span><br><span class="line">    n = random.randint(<span class="number">0</span>, <span class="number">128</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>) &lt;= n &lt;= <span class="built_in">ord</span>(<span class="string">&#x27;z&#x27;</span>) <span class="keyword">or</span> <span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>) &lt;= n &lt;= <span class="built_in">ord</span>(<span class="string">&#x27;Z&#x27;</span>):</span><br><span class="line">        digit = digit[<span class="number">0</span>:i] + <span class="built_in">chr</span>(n) + digit[i:]</span><br><span class="line">    i += <span class="number">1</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;puzzle.txt&#x27;</span>, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> out:</span><br><span class="line">    out.write(digit)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 1091111A01ruVJl99hw11Qv6i102xCYC1c2B31DIsz1tm212l11A1l610448re11BQ09549115951n154V895F115d49109h1m1210810j11w2A5</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>这个题说人话就是把flag的每一项转化成ASCII码全部列一排，再往之间插入字母。所以第一步把字母全部去除掉，然后手动把得到的一串数字分开，首先moectf{}的格式是确定的，然后大概眼睛瞅着，，就出来：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">string</span> a;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;a;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.size();i++)</span><br><span class="line">		<span class="keyword">if</span>(a[i]&gt;=<span class="string">&#x27;0&#x27;</span> &amp;&amp; a[i]&lt;=<span class="string">&#x27;9&#x27;</span>)</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">//1091111A01ruVJl99hw11Qv6i102xCYC1c2B31DIsz1tm212l11A1l610448re11BQ09549115951n154V895F115d49109h1m1210810j11w2A5</span></span><br><span class="line"><span class="comment">//1091111019911610212311212111610448110954911595115489511549109112108101125</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a=[<span class="number">109</span>,<span class="number">111</span>,<span class="number">101</span>,<span class="number">99</span>,<span class="number">116</span>,<span class="number">102</span>,<span class="number">123</span>,<span class="number">112</span>,<span class="number">121</span>,<span class="number">116</span>,<span class="number">104</span>,<span class="number">48</span>,<span class="number">110</span>,<span class="number">95</span>,<span class="number">49</span>,<span class="number">115</span>,<span class="number">95</span>,<span class="number">115</span>,<span class="number">48</span>,<span class="number">95</span>,<span class="number">115</span>,<span class="number">49</span>,<span class="number">109</span>,<span class="number">112</span>,<span class="number">108</span>,<span class="number">101</span>,<span class="number">125</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">    print(<span class="built_in">chr</span>(i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line"><span class="comment"># 109,111,101,99,116,102,123,112,121,116,104,48,110,95,49,115,95,115,48,95,115,49,109,112,108,101,125</span></span><br><span class="line"><span class="comment"># moectf&#123;pyth0n_1s_s0_s1mple&#125;</span></span><br></pre></td></tr></table></figure>
-<h2 id="Frank-永远滴神"><a href="#Frank-永远滴神" class="headerlink" title="Frank, 永远滴神"></a>Frank, 永远滴神</h2><img src="/images/2020moectf-Algorithm\image-20201009175357736.png" class="lazyload" data-srcset="/images/2020moectf-Algorithm\image-20201009175357736.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20201009175357736" style="zoom:67%;" />
-
-<p>u1s1,这个题就是学习一下python怎么遍历文件夹，，害~看脚本吧：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> base64 <span class="keyword">import</span> *</span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">path = <span class="string">&quot;自己的目录\puzzle&quot;</span></span><br><span class="line">dirs1 = os.listdir(path)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> dirs1:</span><br><span class="line">	path_1 = os.path.join(path,i)</span><br><span class="line">	dirs2 = os.listdir(path_1)</span><br><span class="line">	<span class="keyword">for</span> j <span class="keyword">in</span> dirs2:</span><br><span class="line">		path_2 = os.path.join(path_1,j)</span><br><span class="line">		dirs3 = os.listdir(path_2)</span><br><span class="line">		<span class="keyword">for</span> k <span class="keyword">in</span> dirs3:</span><br><span class="line">			path_3 = os.path.join(path_2,k)</span><br><span class="line">			dirs4 = os.listdir(path_3)</span><br><span class="line">			<span class="keyword">for</span> m <span class="keyword">in</span> dirs4:</span><br><span class="line">				path_4 = os.path.join(path_3,m)</span><br><span class="line">				print(path_4)</span><br><span class="line">				f=<span class="built_in">open</span>(path_4)</span><br><span class="line">				file = f.read()</span><br><span class="line">				f.close()</span><br><span class="line">				count += file.count(<span class="string">&#x27;FrankNB!&#x27;</span>)</span><br><span class="line">print(count.b64encode())</span><br><span class="line"></span><br><span class="line"><span class="comment">#moectf&#123;MjA1MjMy&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="赤道企鹅-永远滴神"><a href="#赤道企鹅-永远滴神" class="headerlink" title="赤道企鹅, 永远滴神"></a>赤道企鹅, 永远滴神</h2><img src="/images/2020moectf-Algorithm\image-20201009180540819.png" class="lazyload" data-srcset="/images/2020moectf-Algorithm\image-20201009180540819.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20201009180540819" style="zoom:67%;" />
-
-<p>这个题就比前一个多一个数据处理，，，所以也没什么说的，直接贴脚本：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> base64 <span class="keyword">import</span> *</span><br><span class="line">count_n = <span class="number">0</span></span><br><span class="line">count_y = <span class="number">0</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">path = <span class="string">&quot;H:\Competitions\moectf\Algorithm\Eqqie\puzzle&quot;</span></span><br><span class="line">dirs1 = os.listdir(path)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> dirs1:</span><br><span class="line">	path_1 = os.path.join(path,i)</span><br><span class="line">	dirs2 = os.listdir(path_1)</span><br><span class="line">	<span class="keyword">for</span> j <span class="keyword">in</span> dirs2:</span><br><span class="line">		path_2 = os.path.join(path_1,j)</span><br><span class="line">		dirs3 = os.listdir(path_2)</span><br><span class="line">		<span class="keyword">for</span> k <span class="keyword">in</span> dirs3:</span><br><span class="line">			path_3 = os.path.join(path_2,k)</span><br><span class="line">			dirs4 = os.listdir(path_3)</span><br><span class="line">			<span class="keyword">for</span> m <span class="keyword">in</span> dirs4:</span><br><span class="line">				path_4 = os.path.join(path_3,m)</span><br><span class="line">				print(path_4)                      <span class="comment">#遍历文件</span></span><br><span class="line">				f = <span class="built_in">open</span>(path_4)</span><br><span class="line">				file = f.read()</span><br><span class="line">				f.close()                          <span class="comment">#读取文件</span></span><br><span class="line">				<span class="keyword">if</span> file[<span class="number">7</span>]==<span class="string">&#x27;?&#x27;</span>:</span><br><span class="line">					count_n += <span class="number">1</span></span><br><span class="line">					<span class="keyword">continue</span></span><br><span class="line">				count_y += <span class="number">1</span></span><br><span class="line">				a = <span class="string">&quot;&quot;</span></span><br><span class="line">				a += file[<span class="number">7</span>:]</span><br><span class="line">				flag = <span class="number">1</span></span><br><span class="line">				<span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">					<span class="keyword">if</span> (<span class="string">&#x27;9&#x27;</span>&gt;=i&gt;=<span class="string">&#x27;0&#x27;</span> <span class="keyword">or</span> <span class="string">&#x27;z&#x27;</span>&gt;=i&gt;=<span class="string">&#x27;a&#x27;</span> <span class="keyword">or</span> <span class="string">&#x27;Z&#x27;</span>&gt;=i&gt;=<span class="string">&#x27;A&#x27;</span>):</span><br><span class="line">						<span class="keyword">if</span> flag==<span class="number">1</span>:</span><br><span class="line">							flag = <span class="number">0</span></span><br><span class="line">							count += <span class="number">1</span></span><br><span class="line">					<span class="keyword">else</span>:</span><br><span class="line">						flag=<span class="number">1</span></span><br><span class="line"></span><br><span class="line">ans=<span class="built_in">str</span>(count).encode()	</span><br><span class="line">print(b64encode(ans))</span><br><span class="line"><span class="comment">#moectf&#123;MTgyNDI2&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="千层饼"><a href="#千层饼" class="headerlink" title="千层饼"></a>千层饼</h2><img src="/images/2020moectf-Algorithm\image-20201009181151021.png" class="lazyload" data-srcset="/images/2020moectf-Algorithm\image-20201009181151021.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20201009181151021" style="zoom:67%;" />
-
-<p>先放一下加密脚本吧：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> base64 <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> Random</span><br><span class="line"><span class="keyword">from</span> flag <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">alg = [b16encode, b32encode, b64encode, a85encode, b85encode]</span><br><span class="line"></span><br><span class="line">r = Random()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(r.randrange(<span class="number">35</span>,<span class="number">40</span>)):</span><br><span class="line">    er = r.choice(alg)</span><br><span class="line">    flag = r.choice(alg)(<span class="built_in">str</span>(alg.index(er)).encode()) + <span class="string">b&#x27;eqqie_is_god&#x27;</span> + er(flag)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;secret.txt&#x27;</span>,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> out:</span><br><span class="line">    out.write(flag)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;puzzle.txt&#x27;</span>, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> out:</span><br><span class="line">    out.write(flag)</span><br></pre></td></tr></table></figure>
-<p>这个题的思路还是挺显而易见的，，，说白了就是“套娃”。这个题我先半手撕掉了，然后又写了全自动的脚本，半手撕的就不贴了，给个全自动的吧~~：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> base64 <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>=&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">ini</span>():</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(alg)):</span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">			tmp = alg[i](<span class="built_in">str</span>(j).encode())</span><br><span class="line">			<span class="built_in">dict</span>[tmp] = j</span><br><span class="line"></span><br><span class="line">alg = [b16encode, b32encode, b64encode, a85encode, b85encode]</span><br><span class="line">alg_s = [b16decode, b32decode, b64decode, a85decode, b85decode]</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;puzzle.txt&#x27;</span>,<span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">	data = f.read()</span><br><span class="line"></span><br><span class="line">print(<span class="string">&quot;index：&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(alg)):</span><br><span class="line">	print(<span class="string">&quot;  &quot;</span>,i,<span class="string">&quot;: &quot;</span>,alg[i])</span><br><span class="line"></span><br><span class="line">ini()</span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">print(<span class="built_in">dict</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">	<span class="keyword">if</span> <span class="string">&#x27;eqqie_is_god&#x27;</span> <span class="keyword">not</span> <span class="keyword">in</span> data:</span><br><span class="line">		print(data)</span><br><span class="line">		<span class="keyword">break</span></span><br><span class="line">	key = data.index(<span class="string">&#x27;eqqie_is_god&#x27;</span>)</span><br><span class="line">	print(data[:key])</span><br><span class="line">	data = alg_s[<span class="built_in">int</span>(<span class="built_in">dict</span>[data[:key].encode()])](data[key+<span class="number">12</span>:]).decode()</span><br><span class="line">	count = count+<span class="number">1</span></span><br><span class="line">	print(count)</span><br><span class="line">	print()</span><br><span class="line"><span class="comment"># moectf&#123;so00Oo0oO_d31ici0us&#125;</span></span><br></pre></td></tr></table></figure>
-<p>emmm。。。我自认为我的代码还是比较容易理解的。就这样吧~~</p>
-
-  
-  
-  
-    
-    <div class='footer'>
-      
-      
+    <div class='meta-v3' line_style='solid'>
+      <div>
         
-  <div class="related_posts">
-    <section class='header'>
-      <i class="fas fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
-    </section>
-    <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\2020\10\09\2020moectf-Classic-Crypto\" title="2020moectf Classic Crypto" rel="bookmark "><img src="/images/2020moectf Classic Crypto/image-20201008093647321.png" class="lazyload" data-srcset="/images/2020moectf Classic Crypto/image-20201008093647321.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">2020moectf Classic Crypto</span><span class="excerpt">2020年XDSEC招新赛moectf题解</span></a><a class="item" href="\2020\10\13\2020moectf-Crypto\" title="2020moectf Crypto" rel="bookmark "><img src="/images/2020moectf-Crypto/image-20201012091130231.png" class="lazyload" data-srcset="/images/2020moectf-Crypto/image-20201012091130231.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">2020moectf Crypto</span><span class="excerpt">2020年XDSEC招新赛moectf题解</span></a><a class="item" href="\2020\10\13\2020moectf-Web\" title="2020moectf Web" rel="bookmark "><img src="/images/2020moectf-Web/image-20201012095628380.png" class="lazyload" data-srcset="/images/2020moectf-Web/image-20201012095628380.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">2020moectf Web</span><span class="excerpt">2020年XDSEC招新赛moectf题解</span></a><a class="item" href="\2020\10\08\2020moectf-MISC\" title="2020moectf-MISC" rel="bookmark "><img src="/images/2020moectf-MISC/image-20201007194912998.png" class="lazyload" data-srcset="/images/2020moectf-MISC/image-20201007194912998.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">2020moectf-MISC</span><span class="excerpt">2020年XDSEC招新赛moectf题解</span></a><a class="item" href="\2020\10\31\2020moectf-Reverse\" title="2020moectf Reverse" rel="bookmark "><img src="/images/2020moectf-Reverse/image-20201031022658022.png" class="lazyload" data-srcset="/images/2020moectf-Reverse/image-20201031022658022.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">2020moectf Reverse</span><span class="excerpt">2020年XDSEC招新赛moectf题解</span></a></div></section></div>
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://BlackBird-BB.github.io/'><img src='https://i.loli.net/2021/02/20/wimcjKLbd6ZOSC7.jpg'></a>
+        
+        <time>2020-10-13</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/CTF%E6%AF%94%E8%B5%9B%E9%A2%98%E8%A7%A3/">CTF比赛题解</a>
+        
+      </div>
       
-      
-        <div class='copyright'>
-          <blockquote>
-            
-              
-                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-              
-            
-              
-                <p>本文永久链接是：<a href=http://example.com/2020/10/13/2020moectf-Algorithm/>http://example.com/2020/10/13/2020moectf-Algorithm/</a></p>
-              
-            
-          </blockquote>
+        <div>
+          <a class='readmore' href='/2020/10/13/2020moectf-Algorithm/'>
+            阅读全文
+          </a>
         </div>
       
-      
-        <div class='donate'>
-          <div class='imgs'>
-            
-              <img src='https://i.loli.net/2021/02/20/gleZspTCnat43xO.png'>
-            
-              <img src='https://i.loli.net/2021/02/20/5hDY4HRmQvjUPOx.png'>
-            
-              <img src='https://i.loli.net/2021/02/20/2Fk8TYNoz7b9mDK.png'>
-            
+    </div>
+  
+
+</div>
+
           </div>
-        </div>
-      
-    </div>
-  
-  
-    
-
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-02-23T19:06:27+08:00">
-  <a class='notlink'>
-    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年2月23日</p>
-  </a>
-</div>
-
         
       
-        
-          
+    
+  </section>
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/CTF/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>CTF</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/program/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>program</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/wp/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>wp</p></a></div>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
     
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2020/10/13/2020moectf-Algorithm/&title=2020moectf Algorithm - BlackBird's Blog&summary=这次的算法题，，，怎么说，，感觉真正考察算法的我都没写，就写了些不考察真正算法的题目"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2020/10/13/2020moectf-Algorithm/&title=2020moectf Algorithm - BlackBird's Blog&summary=这次的算法题，，，怎么说，，感觉真正考察算法的我都没写，就写了些不考察真正算法的题目"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2020/10/13/2020moectf-Algorithm/&title=2020moectf Algorithm - BlackBird's Blog&summary=这次的算法题，，，怎么说，，感觉真正考察算法的我都没写，就写了些不考察真正算法的题目"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-  </div>
-
-
-  
   
 
-  
-    <div class="prev-next">
-      
-        <a class='prev' href='/2020/10/13/2020moectf-Web/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>2020moectf Web</p>
-          <p class='content'>作为一个二进制手……我把web强行做完，我太难了……
 
-
-GET
-POST
-小饼干小饼干？cookie！
-
-url解码：
-
-1moectf&#123;y0u_c4n&#39;t_e4t_thi3...</p>
-        </a>
-      
-      
-        <a class='next' href='/2020/10/09/2020moectf-Classic-Crypto/'>
-          <p class='title'>2020moectf Classic Crypto<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>这次比赛竟然还有Classic Crypto专场，属实不易。然后我也把古典密码学做完了，占我总分的9.35。
-
-大帝的征程#1
-
-大帝 -&gt; 凯撒 -&gt; 凯撒密码
-因为这是moect...</p>
-        </a>
-      
-    </div>
-  
-</article>
-
-
-  
-
-  <article class="post white-box reveal shadow" id="comments">
-    <p ct><i class='fas fa-comments'></i> 评论</p>
     
-    <div id="valine_container" class="valine_thread">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-
-<!-- valine 添加一言 -->
-	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-       <script type="text/javascript">
-              jinrishici.load(function(result) {
-            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
-             document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
-            });
-     </script>
-</div>
-  </article>
-
-
-
-
-
-
+  
 </div>
 <aside class='l_side'>
   
@@ -719,28 +477,127 @@ url解码：
     
     
 
+<section class="widget blogger shadow blur desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='https://i.loli.net/2021/02/20/wimcjKLbd6ZOSC7.jpg'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>BlackBird's Blog</h2>
+        
+        
+          <p>一个每天努力的菜鸡</p>
 
+        
+        
+          <p><span id="jinrishici-sentence">BlackBird's Blog</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:602198790@qq.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/BlackBird-BB/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=602198790&amp;website=www.oicqzone.com"
+              class="social /source/images/QQ.png flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
 
-  <section class="widget toc-wrapper shadow blur desktop mobile" id="toc-div" >
+  
+
+  
+    
+    
+  
+
+  <section class="widget category shadow blur desktop">
     
   <header>
     
-      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#mess"><span class="toc-text">mess</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Frank-%E6%B0%B8%E8%BF%9C%E6%BB%B4%E7%A5%9E"><span class="toc-text">Frank, 永远滴神</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%A4%E9%81%93%E4%BC%81%E9%B9%85-%E6%B0%B8%E8%BF%9C%E6%BB%B4%E7%A5%9E"><span class="toc-text">赤道企鹅, 永远滴神</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%83%E5%B1%82%E9%A5%BC"><span class="toc-text">千层饼</span></a></li></ol>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/CTF%E6%AF%94%E8%B5%9B%E9%A2%98%E8%A7%A3/" href="/categories/CTF%E6%AF%94%E8%B5%9B%E9%A2%98%E8%A7%A3/"
+            id="categoriesCTFE6AF94E8B59BE9A298E8A7A3"
+            ><div class='name'>CTF比赛题解</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E7%94%B5%E5%AD%90%E5%8F%96%E8%AF%81%E5%AD%A6%E4%B9%A0/" href="/categories/%E7%94%B5%E5%AD%90%E5%8F%96%E8%AF%81%E5%AD%A6%E4%B9%A0/"
+            id="categoriesE794B5E5AD90E58F96E8AF81E5ADA6E4B9A0"
+            ><div class='name'>电子取证学习</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
     </div>
   </section>
 
 
   
 
+  
+    
+    
+  
+
+  <section class="widget tagcloud shadow blur desktop mobile">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/CTF/" style="font-size: 20.67px; color: #6c6c6c">CTF</a> <a href="/tags/Crypto/" style="font-size: 17.33px; color: #828282">Crypto</a> <a href="/tags/RE/" style="font-size: 14px; color: #999">RE</a> <a href="/tags/misc/" style="font-size: 14px; color: #999">misc</a> <a href="/tags/program/" style="font-size: 14px; color: #999">program</a> <a href="/tags/web/" style="font-size: 14px; color: #999">web</a> <a href="/tags/wp/" style="font-size: 24px; color: #555">wp</a> <a href="/tags/%E6%9D%82%E8%AE%B0/" style="font-size: 14px; color: #999">杂记</a> <a href="/tags/%E7%94%B5%E5%AD%90%E5%8F%96%E8%AF%81/" style="font-size: 14px; color: #999">电子取证</a>
+    </div>
+  </section>
+
+
+  
+
+  
+
 
 </aside>
-
 
 
 		  
@@ -749,8 +606,8 @@ url解码：
 
 <script>
   window.pdata={}
-  pdata.ispage=true;
-  pdata.postTitle="2020moectf Algorithm";
+  pdata.ispage=false;
+  pdata.postTitle="";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
